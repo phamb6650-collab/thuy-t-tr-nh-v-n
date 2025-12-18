@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách Sử Dụng Hộp Điện Thoại Khẩn Cấp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚨 CÁCH SỬ DỤNG HỘP ĐIỆN THOẠI KHẨN CẤP 📞</h1>
+    </header>
+
+    <main>
+        <section class="team-info-container">
+            <div class="team-info-header">
+                <h2>Thành viên</h2>
+            </div>
+            <div class="info-box">
+                <p><strong>Lớp:</strong> 10A3</p>
+                <p><strong>Nhóm:</strong> 3C</p>
+            </div>
+            <div class="team-members">
+                <ul>
+                    <li>-Võ Xuân Mai</li>
+                    <li>-Nguyễn Thị Ngọc Trinh</li>
+                    <li>-Hồng Thanh Hào</li>
+                    <li>-Lê Minh Trọng</li>
+                    <li>-Lê Quỳnh Hân</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cac-bieu-tuong">
+            <h2>Các Biểu Tượng Trên Hộp Điện Thoại</h2>
+
+            <article>
+                <h3>Kí hiệu SOS</h3>
+                <p>Là nút gọi khẩn cấp thường có màu đỏ. Bấm nút này sẽ tự động kết nối với tổng đài khẩn cấp.</p>
+                <img src="hinh_monkey.jpg" alt="Hình ảnh nút SOS">
+            </article>
+
+            <article>
+                <h3>Kí hiệu đèn báo</h3>
+                <p>Là đèn báo tình trạng hoạt sáng liên tục khi thiết bị đang hoạt động (đang gọi hoặc đã kết nối).</p>
+                <img src="anh_con_khi.jpg" alt="Hình ảnh đèn báo">
+            </article>
+
+            <article>
+                <h3>Kí hiệu Mic</h3>
+                <p>Khu vực để nói và nghe, nói to rõ và nhìn thẳng vào hộp điện thoại.</p>
+                <img src="con_cho.jpg" alt="Hình ảnh khu vực micro">
+            </article>
+
+            <article>
+                <h3>Kí hiệu LOCATION</h3>
+                <p>Là vị trí định danh một mã số hoặc toạ độ dán trên thân hộp. Mã này giúp nhân viên cứu hộ xác định vị trí chính xác của bạn.</p>
+                <img src="me_oi.jpg" alt="Hình ảnh mã vị trí LOCATION">
+            </article>
+
+            <article>
+                <h3>Kí hiệu ❌ (Cấm)</h3>
+                <p>Cấm lạm dụng hộp điện thoại khẩn cấp cho mục đích không khẩn cấp, gọi trêu chọc hoặc gọi thử nghiệm.</p>
+                <img src="ma_oi.jpg" alt="Hình ảnh biểu tượng cấm lạm dụng">
+            </article>
+        </section>
+
+        <section id="xu-ly-su-co">
+            <h2>Khi Hộp Điện Thoại Khẩn Cấp Gặp Sự Cố</h2>
+            <p>Khi thiết bị gặp sự cố (ví dụ: không kết nối được, không nghe thấy tiếng, hoặc có dấu hiệu hư hỏng), bạn cần thực hiện các bước sau để đảm bảo an toàn và liên lạc thành công:</p>
+            
+            <ol>
+                <li>Giữ bình tĩnh và thử lại thao tác bấm nút SOS một lần nữa.</li>
+                <li>
+                    Quan sát đèn báo hiệu (Indicator Light):
+                    <ul>
+                        <li>Nếu đèn không sáng, không nhấp nháy, hoặc nhấp nháy màu lỗi (thường là màu đỏ hoặc màu khác so với trạng thái hoạt động bình thường), có thể máy đang bị hỏng hoặc hết pin.</li>
+                    </ul>
+                </li>
+                <li>
+                    Nếu cuộc gọi thất bại hoặc không có tín hiệu:
+                    <ul>
+                        <li>Sử dụng điện thoại cá nhân (nếu có) để gọi đến số khẩn cấp tương ứng (113, 114, 115) hoặc số dịch vụ cứu hộ/ban quản lý khu vực đó.</li>
+                        <li>Khi gọi qua điện thoại cá nhân, hãy chuẩn bị để cung cấp <strong>Mã Vị trí Định danh (LOCATION)</strong> được dán trên thân Hộp Điện Thoại Khẩn Cấp để định vị chính xác.</li>
+                    </ul>
+                </li>
+            </ol>
+            <img src="skibidi.jpg" alt="Hình ảnh minh họa xử lý sự cố">
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const articles = document.querySelectorAll('#cac-bieu-tuong article');
+
+            const observerOptions = {
+                root: null, // quan sát so với viewport
+                rootMargin: '0px',
+                threshold: 0.1 // kích hoạt khi 10% phần tử hiển thị
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Ngừng quan sát sau khi đã hiển thị
+                    }
+                });
+            }, observerOptions);
+
+            articles.forEach(article => {
+                observer.observe(article);
+            });
+        });
+    </script>
+</body>
+</html>
